@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,700" rel="stylesheet">
+
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+
+	<title>IQ Systems</title>
+</head>
+
+<body>
+	<!-- first screen -->
+	<section id="header">
+		<header>
+			<span class="nav_logo"><a href="#header">IQ SYSTEMS</a></span>
+			<a href="#about">О компании</a>
+			<a href="#projects">Проекты</a>
+			<a href="#team">Команда</a>
+			<a href="#footer">Контакты</a>
+		</header>
+			<p class="logo">IQ SYSTEMS</p>
+	</section>
+
+
+	<!-- about -->
+	<section id="about">
+		<p>IQ Systems специализируется на цифровизации предприятий в городе Кызылорда и Кызылординской области в Казахстане. Мы разрабатываем программные и аппаратные комплексы для автоматизации работы, чтобы сократить монотонный труд и высвободить трудовые ресурсы  </p>
+	</section>
+
+
+	<!-- projects -->
+	<section id="projects">
+		<div class="project_1">
+			<div class="layer_1"></div>
+			<div class="layer_2">
+				<h3><a href="#">Сэйлтэкс</a></h3>
+				<span></span>
+				<p>Наши сотрудники участвовали в создании, сопровождении и модернизации сервиса по автоматизации продаж. Данный сервис позволял внедрять на сайты компаний-клиентов форму для получения СМС-купона на скидку, в момент отправки данных, в офисе компании-клиента раздавался звонок и сервис моментально связывал компанию-клиента с посетителем сайта, оставившим номер телефона, для осуществления продажи услуг или товаров по телефону.</p>
+			</div>
+			<div class="layer_3">
+				    <img src="img/digital.png" alt="#">
+			</div>
+		</div>
+		
+		<div class="project_2">
+			<div class="layer_1"></div>
+			<div class="layer_2">
+					<h3><a href="#">Uninsy</a></h3>
+					<span></span>
+					<p>Наши сотрудники участвовали в разработке ERP-системы, которая уже внедрена в одну из клиник Кызылординской области. Данная ERP-система рассчитана на охват всех процессов предприятия-заказчика.</p>
+			</div>
+			<div class="layer_3">
+					<img src="img/blur.png" alt="#" class="project_img">
+			</div>
+		</div>
+		
+		<div class="project_3">
+			<div class="layer_1"></div>
+			<div class="layer_2">
+					<h3><a href="#">ST AD</a></h3>
+					<span></span>
+					<p>Система создания рекламных баннеров, для рекламных сетей, с формой обратной связи. Данный проект позволял создавать и отображать в рекламной сети Google AdWords рекламные баннеры содержащие форму обратной связи, тем самым оплата производилась не за клик по рекламе или некое действие на сайте, а за контактные данные клиента, заинтересованного рекламным предложением. Для оптимизации компании, выбор аудитории производился посредством ретаргетинга. </p>
+			</div>
+			<div class="layer_3">
+					<img src="img/startup.png" alt="#" class="project_img">
+			</div>
+		</div>
+
+	</section>
+
+	<section id="team">
+
+		<div class="first-row">
+				<div class="worker_1">
+				<img src="img/user1.jpg" alt="#">
+				<p><span class="name">Гафуров Ильдар</span> <br> CEO</p>
+			</div>
+			
+			<div class="worker_2">
+				<img src="img/user2.jpg" alt="#">
+				<p><span class="name">Гафуров Наиль</span> <br> CTO </p>
+			</div>
+			
+			<div class="worker_3">
+				<img src="img/user3.jpg" alt="#">
+				<p><span class="name">Антипов Олег</span> <br> Разработчик </p>
+			</div>
+		</div>
+
+
+			<div class="second-row">
+				<div class="worker_1">
+					<img src="img/user4.jpg" alt="#">
+					<p><span class="name">Abuhasira Adel</span> <br> Front end разработчик </p>
+				</div>
+				
+				<div class="worker_2">
+					<img src="img/user5.jpg" alt="#">
+					<p><span class="name">Soghoyan Daniel</span> <br> Маркетолог </p>
+				</div>
+				
+				<div class="worker_3">
+					<img src="img/user6.jpg" alt="#">
+					<p><span class="name">Аббасов Александр</span> <br> Разработчик </p>
+				</div>
+			</div>
+			
+	</section>
+
+
+	<footer id="footer">
+			<p class="footer_logo">IQ SYSTEMS</p>
+		<div class="contacts">
+			<a href="mailto:iqsystems@gmail.com">iqsystems@gmail.com</a><br>
+			<a href="tel:+79781234567">+7978 123 45 67</a>
+		</div>
+	</footer>
+	
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+	<script src="slick/slick.js"></script>
+
+	 <script>
+		$('#projects').slick({
+			infinite: true,
+	        slidesToShow: 1,
+	        slidesToScroll: 1
+		});
+	</script>
+
+	<script>
+	  $(document).ready(function(){
+	    $("a[href*='#']").on("click", function(e){
+	        var anchor = $(this);
+	        $('html, body').stop().animate({
+	            scrollTop: $(anchor.attr('href')).offset().top
+	        }, 777);
+	        e.preventDefault();
+	        return false;
+	    });
+	});
+	</script>
+
+
+</body>
+</html>
