@@ -60,7 +60,7 @@ header a{
 	height: relative;
 	background-color: #fff;
 	color: #5d92ea;
-	margin: 100px 200px;
+	margin: 100px 300px;
 	font-size: 18px;
 	line-height: 1.5;
 }
@@ -187,6 +187,7 @@ header a{
 	justify-content: space-between;
 	align-items: center;
 	box-shadow: -7px 7px 10px -5px #133d90;
+	text-align: center;
 }
 
 .name{
@@ -196,6 +197,7 @@ header a{
 }
 
 #team img{
+	width: 120px;
 	border-radius: 50%;
 	margin-top: -25%;
 }
